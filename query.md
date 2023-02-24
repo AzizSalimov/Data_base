@@ -1,6 +1,7 @@
 1.Categories jadval barcha ustun ma'lumotlarini bilan qaytaring
 
 Task1
+
 select * from categories
 
 Result
@@ -11,6 +12,7 @@ Result
 2.Categories jadval category_name va description ustun ma'lumotlarini qaytaring
 
 Task2
+
 select  category_name, description from categories
 
 Result
@@ -21,6 +23,7 @@ Result
 3. Categories jadval barchaa ustun ma'lumotlarini olishda ustun nomlarini o'zbekcha tarjimada qaytaring.
 
 Task3
+
 select toifalar_nomi.category_name as toifalar_nomi
 from categories as toifalar_nomi
 
