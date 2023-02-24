@@ -1,6 +1,6 @@
 1.Categories jadval barcha ustun ma'lumotlarini bilan qaytaring
 
-Task1
+#Task1
 
 ```sql
 select * from categories
