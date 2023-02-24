@@ -2,8 +2,7 @@
 
 Task1
 
-'''sql
-'''
+```select * from categories```
 
 Result
 
