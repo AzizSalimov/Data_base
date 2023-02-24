@@ -31,5 +31,35 @@ Result
 
 ![image](https://user-images.githubusercontent.com/122611579/221096319-4d52b9a2-7a68-4008-b803-8130eef30b1f.png)
 
+4.Categories jadvaldan kategoriya nomi 'Confections'ga teng bo'lgan ma'lumotlarni qaytaring
+
+Task4
+
+select  category_name  from categories
+where category_name = 'Confections'
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611579/221096559-40282acf-6b3c-4a53-836a-8d3f255cee2c.png)
+
+
+5. Categories jadvaldan kategoriya nomi 'Produce yoki 'Seafood', bo'lgan ma'lumotlarni qqaytaring.
+
+Task5
+
+select category_name from categories
+where category_name = 'Produce' or category_name = 'Seafood'
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611579/221096826-3606fed9-0e49-4e82-a070-c02c2a70c56a.png)
+
+
+
+
+
+
+
+
 
 
