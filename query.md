@@ -91,7 +91,7 @@ Result
 
 8. Customers jadvalidan barcha ma'lumotlarni oling
 
-Task8
+# Task8
 ```sql
 SELECT * from customers
 ```
@@ -102,7 +102,7 @@ Result
 
 9. Customers jadvalida ustun nomlarini o'zbekcha holatda oling
 
-Task9
+# Task9
 ```sql
 select customer_id as raqamlar,
        company_name as kompaniya_nomi,
@@ -126,7 +126,7 @@ Resilt
 
 10.Customers jadvalidan contact_title 'Owner' bo'lgan ma'lumotlarni qaytaring
 
-Task10
+# Task10
 ```sql
 select * from customers
 where contact_title = 'Owner'
@@ -139,7 +139,7 @@ Result
 
 11. Customers jadvalidan city 'London' bo'lgan ma'lumotlarni qaytaring
 
-Task11
+# Task11
 ```sql
 select * from customers
 where city = 'London'
@@ -152,7 +152,7 @@ Result
 
 12. Customers jadvalidan region ustun NULL bo'lgan ma'lumotlarni qaytaring
 
-Task12
+# Task12
 ```sql
 select customer_id ,company_name ,region from customers
 where region is null
@@ -165,7 +165,7 @@ Result
 
 13. Customers jadvalidan region ustun NULL bo'lmagan ma'lumotlarni qaytaring
 
-Task13
+# Task13
 ```sql
 select customer_id, company_name, region from customers
 where region is not null
@@ -178,7 +178,7 @@ Result
 
 14. Customers jadvalidan country ustun Germany bo'lgan ma'lumotlarni qaytaring
 
-Task14
+# Task14
 ```sql
 select * from customers
 where country = 'Germany'
@@ -191,7 +191,7 @@ Result
 
 15. Customers jadvalidan country ustun Germany bo'lgan qatorlar sonini qaytaring
  
-Task15
+# Task15
 ```sql
 select count(*) from customers
 where country = 'Germany'
@@ -205,7 +205,7 @@ Result
 16.Customers jadvalidan fax ustun NULL bo’lmalgan ma’lumotlarni contact_name ustun
 alifbo tartiba tartiblab qaytaring
 
-Task16
+# Task16
 ```sql
 select * from customers
 where fax is not null
@@ -219,7 +219,7 @@ Result
 
 17.Employees jadvaldan barcha ma’lumotlarni qaytaring.
 
-Task17
+# Task17
 
 ```sql
 select * from employees
@@ -232,7 +232,7 @@ Result
 
 18.Employees jadval ustun nomlarini o’zbekcha qaytaring.
 
-Task18
+# Task18
 ```sql
 select employee_id       as raqamlar,
        last_name         as familya,
@@ -264,7 +264,7 @@ Result
 19.Employess jadvaldan title_of_courtest ‘Mr’ bo’lgan xodimlarni firts_name alifbo tartibida
 qaytaring
 
-Task19
+# Task19
 ```sql
 select * from employees
 where title_of_courtesy = 'Mr.'
@@ -278,7 +278,7 @@ Result
 
 20.Employes jadvalda title ‘Sales Representative’ bo’lgan xodimlar sonini qaytaring
 
-Task20
+# Task20
 ```sql
 select count(*) from employees
  where title = 'Sales Representative'
@@ -291,7 +291,7 @@ select count(*) from employees
  
  21.Employes jadvalda hire_date 1994-yilda bo’lgan ma’lumotlarni qaytaring.
  
- Task21
+# Task21
  ```sql
  select * from employees
 where hire_date between '1994-01-01' and '1994-04-21';
@@ -305,7 +305,7 @@ Result
  22.Employes jadvaldan region NULL bo’lmagan xodimlarni first_name, last_name, title, city,
 home_phone ma’lumotlarini first_name Z-A alifbo tartibida qaytaring.
 
-Task22
+# Task22
 
 ```sql
 select first_name , last_name , title,city, home_phone, city, title from employees
@@ -319,7 +319,7 @@ Result
 
 23.Orders jadvaldan customer_id ‘VINET’ bo’lgan buyurtmalarni qaytaring.
 
-Task23
+# Task23
 ```sql
 select * from orders
 where customer_id = 'VINET';
@@ -332,7 +332,7 @@ Result
  
  24.Orders jadvaldan order_date ustuni orqali 1996-yildagi ma’lumotlarni qaytaring.
  
- Task24
+ # Task24
  ```sql
  select * from orders
 where order_date between '1996-01-01' and '1996-11-24';
@@ -344,7 +344,7 @@ Result
  
 25.Orders jadvaldan ship_region ustun NULL bo’lmagan ma’lumotlarni qaytaring.
 
-Task25
+# Task25
 ```sql
 select * from orders
 where ship_region is not null;
@@ -356,7 +356,7 @@ Result
 
 26.Orders jadvaldan order_id 10300 va 10400 orasida bo’lgan ma’lumotlarni qaytaring.
 
-Task26
+# Task26
 ```sql
 select * from orders
 where order_id between 10300 and 10400;
@@ -369,7 +369,7 @@ Result
 
 27.Order Details jadvaldan unit_price ustun umumiy qiymatini qaytaring.
 
-Task27
+# Task27
 
 ```sql
 select sum(unit_price) from order_details
