@@ -2,7 +2,9 @@
 
 Task1
 
+'''
 select * from categories
+'''
 
 Result
 
