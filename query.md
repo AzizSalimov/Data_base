@@ -1,4 +1,3 @@
-1.Categories jadval barcha ustun ma'lumotlarini bilan qaytaring
 
 # Task1
 
@@ -11,7 +10,7 @@ Result
 ![image](https://user-images.githubusercontent.com/122611579/221095800-9b7779ec-4167-4f3d-a4c0-9af892770204.png)
 
 
-2.Categories jadval category_name va description ustun ma'lumotlarini qaytaring
+
 
 # Task2
 
@@ -24,7 +23,7 @@ Result
 ![image](https://user-images.githubusercontent.com/122611579/221096205-a8321cac-232b-4561-9af2-4eeda05db162.png)
 
 
-3. Categories jadval barchaa ustun ma'lumotlarini olishda ustun nomlarini o'zbekcha tarjimada qaytaring.
+
 
 # Task3
 ```sql
@@ -36,7 +35,6 @@ Result
 
 ![image](https://user-images.githubusercontent.com/122611579/221096319-4d52b9a2-7a68-4008-b803-8130eef30b1f.png)
 
-4.Categories jadvaldan kategoriya nomi 'Confections'ga teng bo'lgan ma'lumotlarni qaytaring
 
 # Task4
 ```sql
@@ -49,7 +47,7 @@ Result
 ![image](https://user-images.githubusercontent.com/122611579/221096559-40282acf-6b3c-4a53-836a-8d3f255cee2c.png)
 
 
-5. Categories jadvaldan kategoriya nomi 'Produce yoki 'Seafood', bo'lgan ma'lumotlarni qqaytaring.
+
 
 # Task5
 ```sql
@@ -63,7 +61,6 @@ Result
 
 
 
-6. Categories jadvaldan quyida belgilangan ma’lumotlarni qaytaring.
 
 # Task6
 ```sql
@@ -75,7 +72,7 @@ Result
 ![изображение](https://user-images.githubusercontent.com/122611579/221102106-a283828d-15fa-4514-9d36-a494b3a8bfb1.png)
 
 
-7. Categories jadvaldan ma'lumotlarni description alifbo bo'yicha Z-A tartibida chiqaring.
+
 
 # Task7
 ```sql
@@ -89,7 +86,7 @@ Result
 
 
 
-8. Customers jadvalidan barcha ma'lumotlarni oling
+
 
 # Task8
 ```sql
@@ -100,7 +97,6 @@ Result
 ![изображение](https://user-images.githubusercontent.com/122611579/221102209-c7da00eb-5eed-4454-a347-7869592d1f67.png)
 
 
-9. Customers jadvalida ustun nomlarini o'zbekcha holatda oling
 
 # Task9
 ```sql
