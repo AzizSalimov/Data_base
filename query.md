@@ -15,7 +15,9 @@ Result
 
 Task2
 
+```sql
 select  category_name, description from categories
+```
 
 Result
 
@@ -25,9 +27,10 @@ Result
 3. Categories jadval barchaa ustun ma'lumotlarini olishda ustun nomlarini o'zbekcha tarjimada qaytaring.
 
 Task3
-
+```sql
 select toifalar_nomi.category_name as toifalar_nomi
 from categories as toifalar_nomi
+```
 
 Result
 
@@ -36,9 +39,10 @@ Result
 4.Categories jadvaldan kategoriya nomi 'Confections'ga teng bo'lgan ma'lumotlarni qaytaring
 
 Task4
-
+```sql
 select  category_name  from categories
 where category_name = 'Confections'
+```
 
 Result
 
@@ -48,9 +52,10 @@ Result
 5. Categories jadvaldan kategoriya nomi 'Produce yoki 'Seafood', bo'lgan ma'lumotlarni qqaytaring.
 
 Task5
-
+```sql
 select category_name from categories
 where category_name = 'Produce' or category_name = 'Seafood'
+```
 
 Result
 
@@ -61,10 +66,10 @@ Result
 6. Categories jadvaldan quyida belgilangan ma’lumotlarni qaytaring.
 
 Task6
-
+```sql
 select * from categories
 where category_id between 6 and 8
-
+```
 Result
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221102106-a283828d-15fa-4514-9d36-a494b3a8bfb1.png)
@@ -73,10 +78,10 @@ Result
 7. Categories jadvaldan ma'lumotlarni description alifbo bo'yicha Z-A tartibida chiqaring.
 
 Task7
-
+```sql
 select * from categories
 order by category_name desc
-
+```
 
 Result
 
@@ -87,9 +92,9 @@ Result
 8. Customers jadvalidan barcha ma'lumotlarni oling
 
 Task8
-
+```sql
 SELECT * from customers
-
+```
 Result
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221102209-c7da00eb-5eed-4454-a347-7869592d1f67.png)
@@ -98,7 +103,7 @@ Result
 9. Customers jadvalida ustun nomlarini o'zbekcha holatda oling
 
 Task9
-
+```sql
 select customer_id as raqamlar,
        company_name as kompaniya_nomi,
        contact_name as kontakt_nomi,
@@ -112,6 +117,7 @@ select customer_id as raqamlar,
        fax as faks
 
 from customers;
+```
 
 Resilt
 
@@ -121,9 +127,10 @@ Resilt
 10.Customers jadvalidan contact_title 'Owner' bo'lgan ma'lumotlarni qaytaring
 
 Task10
-
+```sql
 select * from customers
 where contact_title = 'Owner'
+```
 
 Result
 
@@ -133,10 +140,10 @@ Result
 11. Customers jadvalidan city 'London' bo'lgan ma'lumotlarni qaytaring
 
 Task11
-
+```sql
 select * from customers
 where city = 'London'
-
+```
 
 Result
 
@@ -146,9 +153,10 @@ Result
 12. Customers jadvalidan region ustun NULL bo'lgan ma'lumotlarni qaytaring
 
 Task12
-
+```sql
 select customer_id ,company_name ,region from customers
 where region is null
+```
 
 Result
 
@@ -158,9 +166,10 @@ Result
 13. Customers jadvalidan region ustun NULL bo'lmagan ma'lumotlarni qaytaring
 
 Task13
-
+```sql
 select customer_id, company_name, region from customers
 where region is not null
+```
 
 Result
 
@@ -170,10 +179,10 @@ Result
 14. Customers jadvalidan country ustun Germany bo'lgan ma'lumotlarni qaytaring
 
 Task14
-
+```sql
 select * from customers
 where country = 'Germany'
-
+```
 
 Result
 
@@ -183,10 +192,10 @@ Result
 15. Customers jadvalidan country ustun Germany bo'lgan qatorlar sonini qaytaring
  
 Task15
-
+```sql
 select count(*) from customers
 where country = 'Germany'
-
+```
 
 Result
 
@@ -197,11 +206,12 @@ Result
 alifbo tartiba tartiblab qaytaring
 
 Task16
-
+```sql
 select * from customers
 where fax is not null
     order by fax desc
-    
+```
+
 Result
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221103669-a90ffd9e-2b3a-4986-9b86-839dbf631a76.png)
@@ -211,7 +221,9 @@ Result
 
 Task17
 
+```sql
 select * from employees
+```
 
 Result
 
@@ -221,7 +233,7 @@ Result
 18.Employees jadval ustun nomlarini o’zbekcha qaytaring.
 
 Task18
-
+```sql
 select employee_id       as raqamlar,
        last_name         as familya,
        first_name        as ism,
@@ -242,6 +254,7 @@ select employee_id       as raqamlar,
        photo_path        as fotosurat_yoli
 
 from employees
+```
 
 Result
 
@@ -252,11 +265,11 @@ Result
 qaytaring
 
 Task19
-
+```sql
 select * from employees
 where title_of_courtesy = 'Mr.'
 order by title_of_courtesy
-
+```
 
 Result
 
@@ -266,10 +279,10 @@ Result
 20.Employes jadvalda title ‘Sales Representative’ bo’lgan xodimlar sonini qaytaring
 
 Task20
-
+```sql
 select count(*) from employees
  where title = 'Sales Representative'
- 
+ ```
  
  Result
  
@@ -279,10 +292,10 @@ select count(*) from employees
  21.Employes jadvalda hire_date 1994-yilda bo’lgan ma’lumotlarni qaytaring.
  
  Task21
- 
+ ```sql
  select * from employees
 where hire_date between '1994-01-01' and '1994-04-21';
-
+```
 
 Result
  
@@ -294,8 +307,10 @@ home_phone ma’lumotlarini first_name Z-A alifbo tartibida qaytaring.
 
 Task22
 
+```sql
 select first_name , last_name , title,city, home_phone, city, title from employees
 order by first_name desc;
+```
 
 Result
 
@@ -305,9 +320,10 @@ Result
 23.Orders jadvaldan customer_id ‘VINET’ bo’lgan buyurtmalarni qaytaring.
 
 Task23
-
+```sql
 select * from orders
 where customer_id = 'VINET';
+```
 
 Result
 
@@ -317,10 +333,10 @@ Result
  24.Orders jadvaldan order_date ustuni orqali 1996-yildagi ma’lumotlarni qaytaring.
  
  Task24
- 
+ ```sql
  select * from orders
 where order_date between '1996-01-01' and '1996-11-24';
-
+```
 Result
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221104345-6f074c66-2fa4-4695-822c-5c3393819ce4.png)
@@ -329,10 +345,10 @@ Result
 25.Orders jadvaldan ship_region ustun NULL bo’lmagan ma’lumotlarni qaytaring.
 
 Task25
-
+```sql
 select * from orders
 where ship_region is not null;
-
+```
 Result
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221104429-543a410e-8a16-4eb0-8dc1-318944a6d88c.png)
@@ -341,9 +357,10 @@ Result
 26.Orders jadvaldan order_id 10300 va 10400 orasida bo’lgan ma’lumotlarni qaytaring.
 
 Task26
-
+```sql
 select * from orders
 where order_id between 10300 and 10400;
+```
 
 Result
 
@@ -354,7 +371,9 @@ Result
 
 Task27
 
+```sql
 select sum(unit_price) from order_details
+```
 
 Result
 
