@@ -331,7 +331,7 @@ Result
  # Task24
  ```sql
  select * from orders
-where order_date between '1996-01-01' and '1996-11-24';
+where order_date between '1996-01-01' and '1996-12-31';
 ```
 Result
 
