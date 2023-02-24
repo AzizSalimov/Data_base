@@ -13,7 +13,7 @@ Result
 
 2.Categories jadval category_name va description ustun ma'lumotlarini qaytaring
 
-Task2
+# Task2
 
 ```sql
 select  category_name, description from categories
@@ -26,7 +26,7 @@ Result
 
 3. Categories jadval barchaa ustun ma'lumotlarini olishda ustun nomlarini o'zbekcha tarjimada qaytaring.
 
-Task3
+# Task3
 ```sql
 select toifalar_nomi.category_name as toifalar_nomi
 from categories as toifalar_nomi
@@ -38,7 +38,7 @@ Result
 
 4.Categories jadvaldan kategoriya nomi 'Confections'ga teng bo'lgan ma'lumotlarni qaytaring
 
-Task4
+# Task4
 ```sql
 select  category_name  from categories
 where category_name = 'Confections'
@@ -51,7 +51,7 @@ Result
 
 5. Categories jadvaldan kategoriya nomi 'Produce yoki 'Seafood', bo'lgan ma'lumotlarni qqaytaring.
 
-Task5
+# Task5
 ```sql
 select category_name from categories
 where category_name = 'Produce' or category_name = 'Seafood'
@@ -65,7 +65,7 @@ Result
 
 6. Categories jadvaldan quyida belgilangan ma’lumotlarni qaytaring.
 
-Task6
+# Task6
 ```sql
 select * from categories
 where category_id between 6 and 8
@@ -77,7 +77,7 @@ Result
 
 7. Categories jadvaldan ma'lumotlarni description alifbo bo'yicha Z-A tartibida chiqaring.
 
-Task7
+# Task7
 ```sql
 select * from categories
 order by category_name desc
