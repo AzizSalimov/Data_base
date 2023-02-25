@@ -48,12 +48,29 @@ RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221351715-166c5b1b-16c6-417b-8d13-f147eb880d44.png)
 
-
+5. Write an SQL query to display the result of an arithmetic expression.
 
 # TASK5
 
+```sql
+select 10 * 10 + 5 * 5
+```
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221352231-bc23817d-f6dc-4463-8b50-2cdf25712055.png)
+
+
+6. Write a SQL statement to display specific columns such as names and commissions for all salespeople. 
 
 # TASK6
+
+```sql
+select name, commission from salesman
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221352913-911b964b-a950-40d2-9f6b-d150d9e7a642.png)
 
 
 # TASK7
