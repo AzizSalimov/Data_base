@@ -8,7 +8,7 @@ SELECT * FROM salesman;
 
 # RESULT
 
-![изображение](https://user-images.githubusercontent.com/122611579/221350102-232aa4bf-6032-4728-9594-3ea4944fbfbc.png)
+![изображение](https://user-images.githubusercontent.com/122611579/221350132-85c9d23a-f34d-4299-9228-21d4ebba9dba.png)
 
 
 
