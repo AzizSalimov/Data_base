@@ -72,17 +72,56 @@ RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221352913-911b964b-a950-40d2-9f6b-d150d9e7a642.png)
 
+7. Write a query to display the columns in a specific order, such as order date, salesman ID, order number, and purchase amount for all orders.  
 
 # TASK7
 
+```sql
+select ord_data, selesman_id, ord_no, purch_amt from orders
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221354514-b918003d-7386-4c12-94d5-ac374034faaf.png)
+
+From the following table, write a SQL query to identify the unique salespeople ID. Return salesman_id.
 
 # TASK8
 
+```sql
+select distinct salesman_id from orders
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221356241-9f87304b-7ef2-431c-8284-cb16baf12d56.png)
+
+
+9. From the following table, write a SQL query to locate salespeople who live in the city of 'Paris'. Return salesperson's name, city. 
 
 # TASK9
 
+```sql
+select name, city from salesman 
+where city= 'Paris'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221356476-e4d2250c-6c25-419a-ae00-a745c70b80be.png)
+
+
+10. From the following table, write a SQL query to find customers whose grade is 200. Return customer_id, cust_name, city, grade, salesman_id. 
 
 # TASK10
+
+```sql
+select * from customer 
+where grade= 200
+```
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221356586-d1aec270-fa35-4363-90ba-02d594aaea1a.png)
 
 
 # TASK11
