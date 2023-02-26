@@ -179,31 +179,154 @@ RESULT
 ![изображение](https://user-images.githubusercontent.com/122611579/221394666-754896a2-8506-4006-b597-275c1026e3ae.png)
 
 
+15. From the following table, write a SQL query to find the Nobel Prize winners in the field of ‘Physics’ since 1950. Return winner.  
+
+
 # TASK15
 
+```sql
+select year, subject, winner from nobel_win
+where year >= 1950 and subject = 'Physics'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221397631-d1f73fb3-9ebc-46ca-8853-91b06df180fe.png)
+
+16. From the following table, write a SQL query to find the Nobel Prize winners in ‘Chemistry’ between the years 1965 and 1975. Begin and end values are included. Return year, subject, winner, and country.  
 
 # TASK16
 
+```sql
+select year, subject, winner, country from nobel_win
+where subject = 'Chemistry' and year >= 1965 and year <= 1975
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221397772-5603a7f3-1b10-464c-ac57-abb1294f041f.png)
+
+17. Write a SQL query to display all details of the Prime Ministerial winners after 1972 of Menachem Begin and Yitzhak Rabin.
 
 # TASK17
 
+```sql
+select * from nobel_win
+where year > 1972 and winner in ('Menachem Begin', 'Yitzhak Rabin')
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221398176-ade39c12-cfe3-47eb-b7e7-3197959f2647.png)
+
+
+18. From the following table, write a SQL query to retrieve the details of the winners whose first names match with the string ‘Louis’. Return year, subject, winner, country, and category. 
+
+
 # TASK18
+
+```sql
+select * from nobel_win
+where winner like 'Louis %'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221398497-43459cf6-a33e-4c52-8fa3-6cf0d8b916b2.png)
+
+
+19. From the following table, write a SQL query that combines the winners in Physics, 1970 and in Economics, 1971. Return year, subject, winner, country, and category.  
+
 
 # TASK19
 
+```sql
+???
+```
+
+RESULT
+
+20. From the following table, write a SQL query to find the Nobel Prize winners in 1970 excluding the subjects of Physiology and Economics. Return year, subject, winner, country, and category.  
+
+
 # TASK20
+
+```sql
+select * from nobel_win 
+where year = 1970 and subject not in ('Physiology', 'Economics')
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221399105-5167e322-9744-4d66-a4b7-6ab70a485441.png)
+
+
+21. From the following table, write a SQL query to combine the winners in 'Physiology' before 1971 and winners in 'Peace' on or after 1974. Return year, subject, winner, country, and category.
 
 
 # TASK21
 
+```sql
+???
+```
+
+RESULT
+
+
+22. From the following table, write a SQL query to find the details of the Nobel Prize winner 'Johannes Georg Bednorz'. Return year, subject, winner, country, and category.  
 
 # TASK22
 
+```sselect * from nobel_win 
+where winner = 'Johannes Georg Bednorz'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221399292-bfd2d46a-b0fd-4b9b-b826-bf4e4ac5d555.png)
+
+
+23. From the following table, write a SQL query to find Nobel Prize winners for the subject that does not begin with the letter 'P'. Return year, subject, winner, country, and category. Order the result by year, descending and winner in ascending. 
+
 # TASK23
+
+```sql
+select * from nobel_win
+where subject not like 'P%'
+  order by year desc, winner
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221399780-3a71bae3-9f8d-4198-92e6-cc28969f3f56.png)
+
+
+24. From the following table, write a SQL query to find the details of 1970 Nobel Prize winners. Order the results by subject, ascending except for 'Chemistry' and ‘Economics’ which will come at the end of the result set. Return year, subject, winner, country, and category.
+
 
 # TASK24
 
+```sql
+???
+```
+
+RESULT
+
+
+25. From the following table, write a SQL query to select a range of products whose price is in the range Rs.200 to Rs.600. Begin and end values are included. Return pro_id, pro_name, pro_price, and pro_com.  
+
 # TASK25
+
+```sql
+select * from item_mast
+where pro_price 
+between 200 and 600
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221400046-1d791f82-619c-4cec-bc67-ca3814e85652.png)
+
 
 
 # TAS26
