@@ -124,16 +124,60 @@ RESULT
 ![изображение](https://user-images.githubusercontent.com/122611579/221356586-d1aec270-fa35-4363-90ba-02d594aaea1a.png)
 
 
+11. From the following table, write a SQL query to find orders that are delivered by a salesperson with ID. 5001. Return ord_no, ord_date, purch_amt
+
 # TASK11
 
+```sql
+select ord_no, ord_date, purch_amt from orders
+where salesman_id= 5001
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221393757-71920c7b-3d11-4222-aa03-d86f76bbde65.png)
+
+12. From the following table, write a SQL query to find the Nobel Prize winner(s) for the year 1970. Return year, subject and winner.  
 
 # TASK12
+
+```sql
+select year, subject, winner from nobel_win
+where year = 1970
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221393959-36624974-2474-4d92-803f-70e20b6ad4eb.png)
+
+
+13. From the following table, write a SQL query to find the Nobel Prize winner in ‘Literature’ for 1970. Return winner. 
 
 
 # TASK13
 
+```sql
+select year, subject, winner from nobel_win
+where year = 1971 and subject = 'Literature'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221394256-c8dd576a-bc37-42d6-8dba-16cd5c590c94.png)
+
+14. From the following table, write a SQL query to locate the Nobel Prize winner ‘Dennis Gabor'. Return year, subject. 
 
 # TASK14
+
+```sql
+select winner, year, subject from nobel_win
+where winner = 'Dennis Gabor'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221394666-754896a2-8506-4006-b597-275c1026e3ae.png)
+
 
 # TASK15
 
