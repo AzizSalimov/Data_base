@@ -24,3 +24,4 @@ where city = 'New York' and grade > 100;
 RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221406052-9d1c9961-0f71-4b51-a692-053bc6c1c13f.png)
+
