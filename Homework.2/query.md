@@ -246,6 +246,7 @@ RESULT
 
 RESULT
 
+
 20. From the following table, write a SQL query to find the Nobel Prize winners in 1970 excluding the subjects of Physiology and Economics. Return year, subject, winner, country, and category.  
 
 
@@ -328,22 +329,106 @@ RESULT
 ![изображение](https://user-images.githubusercontent.com/122611579/221400046-1d791f82-619c-4cec-bc67-ca3814e85652.png)
 
 
+26. From the following table, write a SQL query to calculate the average price for a manufacturer code of 16. Return avg.  
 
 # TAS26
 
+```sql
+???
+```
+
+
+RESULT
+
+
+27. From the following table, write a SQL query to display the pro_name as 'Item Name' and pro_priceas 'Price in Rs.
 
 # TASK27
 
+```sql
+select pro_name as 'Item Name', pro_price as 'Price in Rs.' from item_mast
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221401109-27cc2a71-89c6-4390-8bbb-76a40bf0e600.png)
+
+
+28. From the following table, write a SQL query to find the items whose prices are higher than or equal to $250. Order the result by product price in descending, then product name in ascending. Return pro_name and pro_price. 
 
 # TASK28 
 
+```sql
+select pro_name, pro_price from item_mast
+where pro_price >= 250 order by pro_price desc, pro_name;
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221401417-edb4b5ec-689b-4823-a3e6-234ed8a48a83.png)
+
+
+29. From the following table, write a SQL query to calculate average price of the items for each company. Return average price and company code. 
 
 # TASK29
 
+```sql
+select avg(pro_price), pro_com from item_mast 
+group by pro_com
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221401556-81c875d3-fcb5-489f-9651-f2e0fb872fe7.png)
+
+30. From the following table, write a SQL query to find the cheapest item(s). Return pro_name and, pro_price.  
+
 # TASK30
+
+```sql
+ select pro_name, pro_price from item_mast 
+ where pro_price = (select min(pro_price) from item mast)
+```
+
+RESULT 
+
+![изображение](https://user-images.githubusercontent.com/122611579/221402283-947c1dcc-0c29-4e24-9b78-29b767e09039.png)
+
+
+31. From the following table, write a SQL query to find the unique last name of all employees. Return emp_lname.
 
 # TASK31
 
+```sql
+???
+```
+
+RESULT
+
+
+32. From the following table, write a SQL query to find the details of employees whose last name is 'Snares'. Return emp_idno, emp_fname, emp_lname, and emp_dept. 
+
 # TASK32
 
+```sql
+select * from emp_details
+where emp_lname = 'Snares'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221402406-5abffc47-1345-4cbe-ba00-4fc6874bc223.png)
+
+
+33. From the following table, write a SQL query to retrieve the details of the employees who work in the department 57. Return emp_idno, emp_fname, emp_lname and emp_dept.. 
+
 # TASK33
+
+```sql
+select * from emp_details
+where emp_dept = 57
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221402494-1d07f35f-b9ff-4849-985a-dd3c25080e50.png)
