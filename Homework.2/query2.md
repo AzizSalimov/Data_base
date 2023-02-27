@@ -75,12 +75,13 @@ RESULT
 
 ```sql
 select * from orders 
-where ((ord_date = '2012-09-10' and salesman_id > 5005) or purch_amt > 1000.00)
+where ((ord_date = '2012-09-10' or salesman_id > 5005) or purch_amt > 1000.00)
 ```
 
 RESULT
 
-![изображение](https://user-images.githubusercontent.com/122611579/221474602-f8d3edb3-2ccc-4eba-94ec-44bb4a396f27.png)
+![изображение](https://user-images.githubusercontent.com/122611579/221486796-588b69ed-8053-4aed-8dbc-e32ff2d70e49.png)
+
 
 
 7. Quyidagi jadvaldan komissiyalari 0,10 dan 0,12 gacha bo'lgan sotuvchilarning tafsilotlarini topish uchun SQL so'rovini yozing. Sotuvchi_id, ism, shahar va komissiyani qaytaring.
