@@ -104,12 +104,14 @@ RESULT
 
 ```sql
 select * from orders 
-where (purch_amt < 200 or not (ord_date >= '2012-02-10' and customer_id < 3009))
+where purch_amt < 200 or not ord_date >= '2012-02-10' and customer_id < 3009
 ```
 
 RESULT
 
-![изображение](https://user-images.githubusercontent.com/122611579/221477185-3fe70e8d-2ae1-467f-a169-05ca3844d863.png)
+
+![изображение](https://user-images.githubusercontent.com/122611579/221488664-ab48d3e8-6408-471a-9e78-dca8b819db9a.png)
+
 
 9. Quyidagi jadvaldan quyidagi shartlarga javob beradigan barcha buyurtmalarni topish uchun SQL so'rovini yozing. Buyurtma sanasi “2012-08-17” yoki mijoz identifikatori 3005 dan katta va xarid summasi 1000 dan kam bo‘lgan kombinatsiyalar bundan mustasno.
 
