@@ -61,7 +61,7 @@ select * from customer
 where not (city = 'New York' or grade > 100)
 ```
 
-RESULT
+RESULT\
 
-![изображение](https://user-images.githubusercontent.com/122611579/221410798-78871d7f-779e-41c6-b50b-3e6f0bd9ddf2.png)
 
+![изображение](https://user-images.githubusercontent.com/122611579/221471425-d41f6475-c175-4a4d-88fa-c8146899187a.png)
