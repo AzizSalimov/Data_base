@@ -50,8 +50,27 @@ RESULT
 # TASK4
 
 ```sql
-
+select E.first_name , E.last_name, E.department_id ,  D.department_name from  employees E join departments D on E.department_id = D.department_id and E.department_id IN (80 , 40) order by E.last_name;
 ```
 
 RESULT
 
+![изображение](https://user-images.githubusercontent.com/122611579/221802854-cde130b1-e004-4cbf-9744-655688c03b0e.png)
+
+
+5. Quyidagi jadvallardan ismi ‘z’ harfi bo‘lgan xodimlarni topish uchun SQL so‘rovini yozing. Ism, familiya, bo'lim, shahar va viloyatni qaytaring.
+
+```sql
+select E.first_name, E.last_name,
+D.department_name, L.city, L.state_province
+from employees E
+join departments D
+on E.department_id = D.department_id
+join locations L
+on D.location_id = L.location_id
+where E.first_name like '%z%'
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221815562-d475d74e-847f-4852-a141-2586f283b3ca.png)
