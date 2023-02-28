@@ -74,3 +74,64 @@ where E.first_name like '%z%'
 RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221815562-d475d74e-847f-4852-a141-2586f283b3ca.png)
+
+
+6. Quyidagi jadvallardan barcha bo'limlarni, shu jumladan xodimlari bo'lmaganlarni topish uchun SQL so'rovini yozing. Ism, familiya, bo'lim identifikatori, bo'lim nomini qaytaring.
+
+# TASKK6
+
+```sqql
+select E.first_name, E.last_name, D.department_id, D.department_name 
+from employees E
+right outer join departments D
+on E.department_id = D.department_id
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221825675-4d72e3ee-6062-45f1-b94d-14a921187f4c.png)
+
+
+7. Quyidagi jadvaldan ID 182 xodimidan kamroq maosh oladigan xodimlarni topish uchun SQL so'rovini yozing. Ism, familiya va ish haqini qaytaring.
+
+# TASK7
+
+```sql
+select E.first_name, E.last_name, E.salary from employees E join employees 
+S on E.salary < S.salary and S.employee_id = 182
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221833661-694fc03a-6621-4999-b357-a6d9acb5a0e7.png)
+
+
+8. Quyidagi jadvaldan xodimlar va ularning menejerlarini topish uchun SQL so'rovini yozing. Xodim va menejerning ismini qaytaring.
+
+# TASK8
+
+```sql
+select  E.first_name as "Employee Name", M.first_name as "Manager" from employees E join employees M on E.manager_id = M.employee_id;
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221838101-23391199-99cc-4c79-929a-d51b8171b47c.png)
+
+
+9. Quyidagi jadvallardan har bir bo'lim uchun bo'lim nomi, shahar va shtat viloyatini ko'rsatish uchun SQL so'rovini yozing.
+
+# TASK9
+
+```sql
+SELECT D.department_name , L.city , L.state_province
+  FROM  departments D 
+    JOIN locations L 
+      ON  D.location_id = L.location_id;
+
+```
+
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221838462-b04ad9bd-8eee-4d3e-aaec-8e3b42228549.png)
