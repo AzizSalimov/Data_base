@@ -27,3 +27,31 @@ on D.location_id = L.location_id
 RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/221774709-711d7ba2-46f4-4b6a-9598-5335c5111795.png)
+
+
+3. Quyidagi jadvaldan barcha xodimlar uchun ism, familiya, ish haqi va ish darajasini topish uchun SQL so'rovini yozing.
+
+# TASK3
+
+```sql
+select E.first_name, E.last_name, E.salary, J.grade_level from employees E
+  join job_grades J
+  on E.salary between J.lowest_sal and J.highest_sal
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/221788016-a1426fef-04c9-446d-bc3a-74d2849bb6ec.png)
+
+
+4. Quyidagi jadvallardan bo'lim ID 80 yoki 40 da ishlaydigan barcha xodimlarni topish uchun SQL so'rovini yozing. Ism, familiya, bo'lim raqami va bo'lim nomini qaytaring.
+
+
+# TASK4
+
+```sql
+
+```
+
+RESULT
+
