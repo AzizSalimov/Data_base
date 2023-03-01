@@ -150,3 +150,20 @@ on E.department_id = D.department_id
 RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/222049701-9b787f7f-f391-44db-97c1-2902a538b6ff.png)
+
+
+11. Quyidagi jadvaldan xodimlar va ularning menejerlarini topish uchun SQL so'rovini yozing. Ushbu menejerlar hech qanday menejer ostida ishlamaydilar. Xodim va menejerning ismini qaytaring.
+
+# TASK11
+
+```sql
+select E.first_name as "Employee Name",
+M.first_name as "Manager"
+from employees E
+left outer join employees M
+on E.manager_id = M.employee_id
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/222051722-11aa0915-264b-4bf2-8de4-f6d68877c6b3.png)
