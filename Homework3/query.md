@@ -78,9 +78,9 @@ RESULT
 
 6. Quyidagi jadvallardan barcha bo'limlarni, shu jumladan xodimlari bo'lmaganlarni topish uchun SQL so'rovini yozing. Ism, familiya, bo'lim identifikatori, bo'lim nomini qaytaring.
 
-# TASKK6
+# TASK6
 
-```sqql
+```sql
 select E.first_name, E.last_name, D.department_id, D.department_name 
 from employees E
 right outer join departments D
@@ -124,14 +124,29 @@ RESULT
 # TASK9
 
 ```sql
-SELECT D.department_name , L.city , L.state_province
-  FROM  departments D 
-    JOIN locations L 
-      ON  D.location_id = L.location_id;
-
+select D.department_name, L.city, L.state_province
+from departments D
+join locations L
+on D.location_id = L.location_id
 ```
 
 
 RESULT
 
-![изображение](https://user-images.githubusercontent.com/122611579/221838462-b04ad9bd-8eee-4d3e-aaec-8e3b42228549.png)
+![изображение](https://user-images.githubusercontent.com/122611579/222048989-b97c87ff-64b7-4a55-a631-3ac85eed1977.png)
+
+
+10. Quyidagi jadvallardan SQL so‘rovini yozing, qaysi xodimlarda bo‘lim bor yoki yo‘q. Ism, familiya, bo'lim identifikatori, bo'lim nomini qaytaring.
+
+# TASK10
+
+```sql
+select E.first_name, E.last_name, E.department_id, D.department_name
+from employees E
+left outer join departments D
+on E.department_id = D.department_id
+```
+
+RESULT
+
+![изображение](https://user-images.githubusercontent.com/122611579/222049701-9b787f7f-f391-44db-97c1-2902a538b6ff.png)
