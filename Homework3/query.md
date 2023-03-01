@@ -167,3 +167,21 @@ on E.manager_id = M.employee_id
 RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/222051722-11aa0915-264b-4bf2-8de4-f6d68877c6b3.png)
+
+
+12. Quyidagi jadvallardan Teylor familiyasi bo'lgan xodim bilan bir bo'limda ishlaydigan xodimlarni topish uchun SQL so'rovini yozing. Ism, familiya va bo'lim identifikatorini qaytaring.
+
+# TASK12
+
+```sql
+???
+```
+
+RESULT
+
+
+
+
+
+
+
