@@ -121,3 +121,5 @@ insert into Regions(coutry, city, region) VALUES ('Uzbekistan', 'Tashkent', 'Ser
 RESULT
 
 ![изображение](https://user-images.githubusercontent.com/122611579/222700358-7775f3b6-ca58-4114-a90b-82f1f50ed091.png)
+
+
